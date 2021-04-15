@@ -107,13 +107,13 @@ def buildadvdefop(u, kappa, ybar):
 
 
 #POD offline 
-snapshots = np.load('D:\Actual Purpose\Supaero\Research Project\Codes\Snapshots\Snapshot75b.npy')
+snapshots = np.load('Snapshots/Snapshot75b.npy')
 print(f'Total number of columns in snapshot matrix = {len(snapshots[0])}')
 limit = int(0.8*len(snapshots[0]))
 snapshots = snapshots[:,0:limit]
 snapshots = np.transpose(snapshots)    
 
-param = np.load('D:\Actual Purpose\Supaero\Research Project\Codes\Param\Param75b.npy')
+param = np.load('Param/Param75b.npy')
 param_snap = param[:,0:limit]
 param_snap = np.transpose(param_snap)
 
